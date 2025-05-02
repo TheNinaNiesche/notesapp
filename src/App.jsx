@@ -1,12 +1,9 @@
+import React from 'react'
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-
-        <h1>Hello from Nina</h1>
-      </header>
-    </div>
-  );
+    <h1>Hello Notesapp 👋</h1>
+  )
 }
 
-export default App;
+export default App

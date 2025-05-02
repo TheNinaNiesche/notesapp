@@ -62,3 +62,60 @@ body {
   font-size: 0.9rem;
   color: #8e8e93;
 }
+
+.quote {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1c1c1e;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+  opacity: 0;
+  animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.apple-button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.apple-button:hover {
+  background: #111;
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Hintergrund Animation */
+body::before {
+  content: "";
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, #f0f0f5 0%, #dfe1e5 100%);
+  animation: subtleMove 20s linear infinite alternate;
+  z-index: -1;
+}
+
+@keyframes subtleMove {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(5%, 5%);
+  }
+ }

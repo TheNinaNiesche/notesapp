@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="app-container">
       <div className="glass-card">
-        <h2 className="quote">{quote}</h2>
+        <h2 className="quote" key={quote}>{quote}</h2>
         <button className="apple-button" onClick={getRandomAffirmation}>
           Refresh my energy 🍏
         </button>

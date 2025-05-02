@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import logo from './logo.svg';
+import './App.css';
+import React, {useState} from 'react';
 
 const affirmations = [
   "You are enough.",
@@ -24,4 +26,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
